@@ -6,7 +6,7 @@ var isDate = function (input) {
   
   if (typeof input === 'string' || typeof input === 'number') {
     const parsedDate = new Date(input);
-    if (!isNaN(parsedDate)) {
+    if (!isNaN(parsedDate.getTime())) {
       return true;
     }
   }
